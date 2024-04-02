@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/img/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+label {
+  color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+.form-control.valid input {
+  border: 2px solid green;
+}
+
+.form-control.error input {
+  border: 2px solid red;
+}
