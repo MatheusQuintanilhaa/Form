@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +9,18 @@ body {
   background-image: url(assets/img/sky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-h1,
-label {
+h1 {
   color: white;
+}
+label {
+  color: black;
+  font-weight: 500;
 }
 
 h1 {
@@ -24,8 +32,38 @@ h1 {
 .container {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: auto;
+  padding: 5%;
   width: 100%;
+}
+.form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+  border-radius: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.form-control label {
+  font-size: 16pt;
+}
+.form-control input {
+  border-radius: 5px;
+  height: 30px;
+  display: block;
+  margin-bottom: 15px;
+}
+.form button {
+  width: 50%;
+}
+.form button {
+  background-color: rgb(57, 6, 128);
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
 }
 .form-control.valid input {
   border: 2px solid green;
@@ -33,4 +71,51 @@ h1 {
 
 .form-control.error input {
   border: 2px solid red;
+}
+@media screen and (max-width: 320px) {
+  body {
+    height: 100vh;
+  }
+  .form-control label {
+    font-size: 12pt;
+  }
+}
+
+/* teste */
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 1s ease-in-out;
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4f95da;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
 }

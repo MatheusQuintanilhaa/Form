@@ -8,8 +8,10 @@
     <script defer src="main.js"></script>
   </head>
   <body>
-    <h1>Formulário</h1>
-    <div class="container">
+    <header>
+      <h1>Formulário</h1>
+    </header>
+    <section class="container">
       <form action="" id="form" class="form">
         <div class="form-control">
           <label for="username">Nome do usuário</label>
@@ -26,8 +28,16 @@
           <input type="password" placeholder="Digite a sua senha" />
           <small></small>
         </div>
-        <button id="enviar" type="submit">Enviar</button>
+        <!-- <button id="enviar" type="submit">Enviar</button> -->
+
+        <button class="btn">
+          <svg width="80px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Enviar</span>
+        </button>
       </form>
-    </div>
+    </section>
   </body>
 </html>
