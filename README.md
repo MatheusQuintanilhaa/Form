@@ -16,4 +16,3 @@ Contribuições são bem-vindas! Se você tiver sugestões de melhorias, correç
 Este projeto está licensiado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
 
-![image](https://github.com/MatheusQuintanilhaa/Formulario/assets/109978989/f28d88e6-56cc-4c10-9fef-1022cb2551ea)
